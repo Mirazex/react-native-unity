@@ -149,7 +149,6 @@ public class ReactNativeUnityViewManager extends SimpleViewManager<ReactNativeUn
     @Override
     public void onHostPause() {
         if (ReactNativeUnity.isUnityReady()) {
-            // Don't use UnityUtils.pause()
             ReactNativeUnity.getPlayer().pause();
         }
     }
