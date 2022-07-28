@@ -13,6 +13,9 @@ import com.unity3d.player.UnityPlayer;
 import com.unity3d.player.IUnityPlayerLifecycleEvents;
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class ReactNativeUnity {
     private static UnityPlayer unityPlayer;
     public static boolean _isUnityReady;
