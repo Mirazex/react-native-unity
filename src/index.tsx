@@ -23,8 +23,8 @@ type ReactNativeUnityViewProps = {
 
 const ComponentName = 'ReactNativeUnityView';
 
-const ReactNativeUnityView =
-  requireNativeComponent<ReactNativeUnityViewProps>(ComponentName);
+const ReactNativeUnityView: React.FC<ReactNativeUnityViewProps> =
+  requireNativeComponent(ComponentName) as any;
 
 export default class UnityView extends React.Component<ReactNativeUnityViewProps> {
   static defaultProps = {};
